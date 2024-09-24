@@ -33,6 +33,7 @@ class Data:
         self.trim_data(min_idx, max_idx)
 
     def trim_data(self, min_idx, max_idx):
+        self.norm_diode = self.norm_diode[min_idx:max_idx]
         self.diode = self.diode[min_idx:max_idx]
         self.waveform = self.waveform[min_idx:max_idx]
         self.time = self.time[min_idx:max_idx]
